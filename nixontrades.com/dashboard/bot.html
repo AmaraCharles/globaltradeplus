@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://app.astonoptions.com/user/invest/botstatistics -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GlobalTradePlus - Invest Statistics</title>
+    <meta name="title" content="Aston Options - Invest Statistics">
+
+    <meta name="description" content="Trade with Confidence on the Most Innovative Crypto Trading Platform - Unlock the Full Potential of the Crypto Market with Us">
+    <meta name="keywords" content="Stocks,Crypto,Wealth,Financial goals,Cryptocurrencies,Market trends,Financial analysts,Diversification,Investment portfolio,Real-time trading,Educational resources,Market updates,Personalized investment coaching,Portfolio management,Seamless investment process,Secure financial future,financial market,stock market,cryptocurrency market,investment strategy,risk management,diversification strategy,financial advisor,investment company,online trading,financial planning,asset management,stock trading,crypto trading,investment opportunities,market analysis,professional guidance,personalized service,investment portfolio management,financial success,long-term investment,secure investments">
+    <link rel="shortcut icon" href="https://app.astonoptions.com/assets/images/logoIcon/favicon.png" type="image/x-icon">
+
+    
+    <link rel="apple-touch-icon" href="https://app.astonoptions.com/assets/images/logoIcon/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Aston Options - Invest Statistics">
+    
+    <meta itemprop="name" content="Aston Options - Invest Statistics">
+    <meta itemprop="description" content="Trade with Confidence on the Most Innovative Crypto Trading Platform - Unlock the Full Potential of the Crypto Market with Us">
+    <meta itemprop="image" content="https://app.astonoptions.com/assets/images/seo/655812645be331700270692.png">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HPS Partner">
+    <meta property="og:description" content="Trade with Confidence on the Most Innovative Crypto Trading Platform - Unlock the Full Potential of the Crypto Market with Us">
+    <meta property="og:image" content="https://app.astonoptions.com/assets/images/seo/655812645be331700270692.png">
+    <meta property="og:image:type" content="png">
+    <meta property="og:image:width" content="1180">
+    <meta property="og:image:height" content="600">
+    <meta property="og:url" content="https://app.astonoptions.com/user/invest/botstatistics">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- font  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./bot_files/css2" rel="stylesheet">
+
+
+    <link href="./bot_files/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./bot_files/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./bot_files/line-awesome.min.css">
+
+    <link rel="stylesheet" href="./bot_files/animate.css">
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="./bot_files/slick.css">
+    <link rel="stylesheet" href="./bot_files/magnific-popup.css">
+    <link rel="stylesheet" href="./bot_files/apexcharts.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="./bot_files/main.css">
+
+    
+    <link rel="stylesheet" href="./bot_files/custom.css">
+
+    <link rel="stylesheet" href="./bot_files/color.php">
+
+    <style>
+    .custom-progress {
+        max-width: 40px !important;
+        max-height: 40px;
+        transform: rotate(-90deg);
+    }
+    .custom-progress .bg-circle {
+        stroke: #00000011;
+        fill: none;
+        stroke-width: 4px;
+        position: relative;
+        z-index: -1;
+    }
+    .custom-progress .progress-circle {
+        fill: none;
+        stroke: hsl(var(--base));
+        stroke-width: 4px;
+        z-index: 11;
+        position: absolute;
+    }
+    .expired-time-circle {
+        position: relative;
+        border: none !important;
+        height: 38px;
+        width: 38px;
+        margin-right: 7px;
+    }
+
+    .expired-time-circle::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 4px solid #dbdce1;
+    }
+
+    .expired-time-circle.danger-border .animation-circle {
+        border-color: hsl(var(--base)) !important;
+    }
+
+    .animation-circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 4px solid hsl(var(--base));
+        height: 100%;
+        width: 100%;
+        border-radius: 150px;
+        transform: rotateY(180deg);
+        animation-name: clipCircle;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0, 0, 1, 1);
+        z-index: 1;
+    }
+    .account-wrapper .left .top {
+        margin-top: 0;
+    }
+    .account-wrapper .left,
+    .account-wrapper .right {
+        width: 100%;
+    }
+    .account-wrapper .right {
+        padding-left: 0;
+        margin-top: 35px;
+    }
+    @keyframes clipCircle {
+        0% {
+        clip-path: polygon(50% 50%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+        /* center, top-center*/
+        }
+        12.5% {
+        clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+        /* center, top-center, top-left*/
+        }
+        25% {
+        clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%);
+        /* center, top-center, top-left, left-center*/
+        }
+        37.5% {
+        clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%);
+        /* center, top-center, top-left, left-center, bottom-left*/
+        }
+        50% {
+        clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%);
+        /* center, top-center, top-left, left-center, bottom-left, bottom-center*/
+        }
+        62.5% {
+        clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+        /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right*/
+        }
+        75% {
+        clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 50%, 100% 50%, 100% 50%);
+        /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right, right-center*/
+        }
+        87.5% {
+        clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0%, 100% 0%);
+        /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right, right-center top-right*/
+        }
+        100% {
+        clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0%, 50% 0%);
+        /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right, right-center top-right, top-center*/
+        }
+    }
+
+    .capital-back{
+        font-size: 10px;
+    }
+</style>
+    <style>
+        .pb-120 {
+            padding-bottom: clamp(40px, 4vw, 40px);
+        }
+
+        .pt-120 {
+            padding-top: clamp(40px, 4vw, 40px);
+        }
+
+        .container {
+            max-width: 1140px;
+        }
+    </style>
+
+<script type="text/javascript" charset="utf-8" async="" src="./bot_files/loader.js.download"></script><script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '59ba79d2fc419942ea29a8fbc1af2f46d3be4b3a';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+<script>
+    $(document).ready(async function () {
+  var obtainfromls=localStorage.getItem("user")
+  var parseResult=JSON.parse(obtainfromls)
+  console.log(parseResult);
+  $("#accountBalance").html(parseResult.balance)
+  $("#profit").html(parseResult.profit)
+    })
+</script>
+<style>
+    /* Dropdown Button */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+  
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+  
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+  
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+  
+    /* Style the dropdown button */
+    .dropdown .dropdown-toggle {
+      cursor: pointer;
+    }
+  </style>
+
+
+<body data-new-gr-c-s-check-loaded="14.1172.0" data-gr-ext-installed="">
+    
+
+<div class="d-flex flex-wrap">
+
+    <div class="dashboard-sidebar" id="dashboard-sidebar">
+    <button class="btn-close dash-sidebar-close d-xl-none"></button>
+    <a href="https://app.astonoptions.com/" class="logo"><img src="./bot_files/logo_2.png" alt="images"></a>
+    <div class="bg--lights">
+        <div class="profile-info">
+            <p class="fs--13px mb-3 fw-bold">ACCOUNT BALANCE</p>
+            <h4 class="usd-balance text--base mb-2 fs--30">0.00 <sub class="top-0 fs--13px">USD </sub></h4>
+            <p class="btc-balance fw-medium fs--18px">0.00 <sub class="top-0 fs--13px">USD <small>(Profit Wallet)</small></sub></p>
+            <!--<p class="btc-balance fw-medium fs--18px">0.00 <sub class="top-0 fs--13px">USD <small>(Staking Wallet)</small></sub></p>-->
+            <div class="mt-4 d-flex flex-wrap gap-2">
+                <a href="https://app.astonoptions.com/user/deposit" class="btn btn--base btn--smd">Deposit</a>
+                <a href="https://app.astonoptions.com/user/withdraw" class="btn btn--secondary btn--smd">Withdraw</a>
+            </div>
+        </div>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a href="https://GlobalTradePlus.com" class=""><img src="./bot_files/dashboard.png" alt="icon"> Dashboard</a></li>
+        <!--<li><a href="https://app.astonoptions.com/user/invest/statistics" class=""><img src="https://app.astonoptions.com/assets/templates/invester//images/icon/investment.png" alt="icon"> Investments</a></li>-->
+        <!--<li><a href="https://app.astonoptions.com/user/invest/cryptostatistics" class=""><img src="https://app.astonoptions.com/assets/templates/invester//images/icon/2fa.png" alt="icon">Staking</a></li>-->
+        <li><a href="https://app.astonoptions.com/user/invest/botstatistics" class=""><img src="./bot_files/2fa.png" alt="icon">Bot</a></li>
+        <li><a href="./tradinghistory.html" class=""><img src="./bot_files/2fa.png" alt="icon"> Trade</a></li>
+        <li><a href="https://app.astonoptions.com/user/invest/tradinglive" class=""><img src="./bot_files/2fa.png" alt="icon">Live Trade</a></li>
+        <li><a href="https://app.astonoptions.com/user/deposit" class=""><img src="./bot_files/wallet.png" alt="icon"> Deposit</a></li>
+        <li><a href="https://app.astonoptions.com/user/withdraw" class=""><img src="./bot_files/withdraw.png" alt="icon"> Withdraw</a></li>
+                <!--<li><a href="https://app.astonoptions.com/user/transfer-balance" class=""><img src="https://app.astonoptions.com/assets/templates/invester//images/icon/balance-transfer.png" alt="icon"> Transfer Balance</a></li>-->
+                <li><a href="https://app.astonoptions.com/user/transactions" class=""><img src="./bot_files/transaction.png" alt="icon"> Transactions</a></li>
+        <li><a href="https://app.astonoptions.com/user/referrals" class=""><img src="./bot_files/referral.png" alt="icon"> Referrals</a></li>
+        
+        <li><a href="https://app.astonoptions.com/ticket" class=""><img src="./bot_files/ticket.png" alt="icon"> Support Ticket</a></li>
+        <li><a href="https://app.astonoptions.com/user/logout" class=""><img src="./bot_files/2fa.png" alt="icon">Logout</a></li>
+    </ul>
+</div>
+
+    <div class="dashboard-wrapper">
+
+        <div class="dashboard-nav d-flex flex-wrap align-items-center justify-content-between">
+    <div class="nav-left d-flex gap-4 align-items-center">
+        <div class="dash-sidebar-toggler d-xl-none" id="dash-sidebar-toggler">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <div class="nav-right d-flex flex-wrap align-items-center gap-3">
+                    <select name="langSel" class="langSel form--control h-auto px-2 py-1 border-0" id="langSel">
+                                    <option value="en" selected="">English</option>
+                            </select>
+                <ul class="nav-header-link d-flex flex-wrap gap-2">
+            <li>
+                <a class="link" href="https://app.astonoptions.com/user/profile-setting"></a>
+                <div class="dropdown-wrapper">
+                    <div class="dropdown-header">
+                        <h6 class="name text--base">false pegasus</h6>
+                        <p class="fs--14px">falsepegasus</p>
+                    </div>
+                    <ul class="links">
+                        <li><a href="https://app.astonoptions.com/user/profile-setting"><i class="fas fa-user"></i> Profile</a></li>
+                        <li><a href="https://app.astonoptions.com/user/change-password"><i class="fas fa-key"></i> Change Password</a></li>
+                        <li><a href="https://app.astonoptions.com/user/twofactor"><i class="fas fa-key"></i> 2fa</a></li>
+                        <li><a href="https://app.astonoptions.com/user/logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        <div class="dashboard-container">
+
+            <div class="dashboard-inner">
+    <div class="mb-4">
+        <p>Purchase Trading Bot</p>
+        <!--<h3>Total Purchased</h3>-->
+    </div>
+    <div class="row gy-4">
+        <div class="col-md-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        
+                      
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between mt-3 mt-sm-4 gap-2">
+<div class="d-flex flex-wrap justify-content-between mt-3 mt-sm-4 gap-2">
+                        <a href="https://app.astonoptions.com/bot" class="btn btn--sm btn--base">Buy Bot <i class="fas fa-arrow-right fs--12px ms-1"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+<!--    <div class="mt-4">-->
+<!--       <p class="h5">Avalaible Bots For Sale</p>-->
+<!--        <div class="plan-list d-flex flex-wrap flex-xxl-column gap-3 gap-xxl-0">-->
+<!--            -->
+<!--                <div class="accordion-body text-center bg-white p-4">-->
+<!--                    <h4 class="text--muted"><i class="far fa-frown"></i> Data not found</h4>-->
+<!--                </div>-->
+<!--            -->
+<!--        </div>-->
+<!--    </div>-->
+    
+     <div class="mt-4">
+        <p class="h5">Bot(s) you've bought</p>
+        <div class="plan-list d-flex flex-wrap flex-xxl-column gap-3 gap-xxl-0">
+                            <div class="accordion-body text-center bg-white p-4">
+                    <h4 class="text--muted"><i class="far fa-frown"></i> Data not found</h4>
+                </div>
+                    </div>
+    </div>
+</div>
+
+ 
+
+        </div>
+    </div>
+</div>
+
+        
+    <script src="./bot_files/jquery-3.6.0.min.js.download"></script>
+    <script src="./bot_files/bootstrap.bundle.min.js.download"></script>
+
+    <!-- Pluglin Link -->
+    <script src="./bot_files/slick.min.js.download"></script>
+    <script src="./bot_files/magnific-popup.min.js.download"></script>
+    <script src="./bot_files/apexcharts.min.js.download"></script>
+
+    
+    <!-- Main js -->
+    <script src="./bot_files/main.js.download"></script>
+
+    <script src="./bot_files/chart.min.js.download"></script>
+
+
+
+
+
+<div class="modal fade" id="stocksmodal">
+    <div class="modal-dialog modal-dialog-centered modal-content-bg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                                            Confirm to invest on 
+                                    </h5>
+                <button type="button" class="close" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form action="https://app.astonoptions.com/user/invest/crypto" method="post">
+                <input type="hidden" name="_token" value="OoeEJ1PNvMQMrMBmEYvxS77CHtVrZuPKBIjlREn2">                <input type="hidden" name="plan_id" value="11">
+                                    <div class="modal-body">
+                        <div class="form-group">
+                           
+
+                            <label class="required" for="wallet_type">Select Wallet</label>
+                            <select class="form-control form--control form-select" name="wallet_type" required="" id="wallet_type">
+                                <option value="">Select One</option>
+                                                                                                                                    <option value="1" data-gateway="{&quot;id&quot;:1,&quot;name&quot;:&quot;Bitcoin&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;symbol&quot;:&quot;&quot;,&quot;method_code&quot;:1000,&quot;gateway_alias&quot;:&quot;bitcoin&quot;,&quot;min_amount&quot;:&quot;100.00000000&quot;,&quot;max_amount&quot;:&quot;10000000.00000000&quot;,&quot;percent_charge&quot;:&quot;0.00&quot;,&quot;fixed_charge&quot;:&quot;0.00000000&quot;,&quot;rate&quot;:&quot;1.00000000&quot;,&quot;image&quot;:null,&quot;gateway_parameter&quot;:null,&quot;created_at&quot;:&quot;2023-02-02T00:57:13.000000Z&quot;,&quot;updated_at&quot;:&quot;2024-04-22T16:01:19.000000Z&quot;,&quot;method&quot;:{&quot;id&quot;:49,&quot;form_id&quot;:18,&quot;code&quot;:&quot;1000&quot;,&quot;name&quot;:&quot;Bitcoin&quot;,&quot;alias&quot;:&quot;bitcoin&quot;,&quot;status&quot;:true,&quot;gateway_parameters&quot;:&quot;[]&quot;,&quot;supported_currencies&quot;:[],&quot;crypto&quot;:0,&quot;extra&quot;:null,&quot;description&quot;:&quot;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Montserrat, sans-serif;\&quot;&gt;Kindly make payment to the wallet address&amp;nbsp;&lt;\/span&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Montserrat, sans-serif; text-align: var(--bs-body-text-align);\&quot;&gt;below:&lt;\/span&gt;&lt;\/font&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/span&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Poppins, sans-serif; text-align: var(--bs-body-text-align); -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%;\&quot;&gt;&lt;b&gt;&lt;font size=\&quot;5\&quot;&gt;bc1qaduqxw6mh3mc2u0wqkgglr05yqffy9j92fyw8g&lt;\/font&gt;&lt;\/b&gt;&lt;\/span&gt;&lt;b&gt;&lt;font size=\&quot;4\&quot;&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/b&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;Provide us with proof of payment using&amp;nbsp;&lt;\/span&gt;&lt;\/font&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Poppins, sans-serif;\&quot;&gt;the form&lt;\/span&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;&amp;nbsp;below:&lt;\/span&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;br&gt;&lt;b&gt;NOTE:&lt;\/b&gt; Kindly check or confirm that you are making payment to the correct wallet address listed.&lt;\/font&gt;&lt;\/div&gt;&quot;,&quot;created_at&quot;:&quot;2023-02-02T00:57:13.000000Z&quot;,&quot;updated_at&quot;:&quot;2024-04-22T16:01:19.000000Z&quot;}}">Bitcoin</option>
+                                                                    <option value="3" data-gateway="{&quot;id&quot;:3,&quot;name&quot;:&quot;Ethereum&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;symbol&quot;:&quot;&quot;,&quot;method_code&quot;:1002,&quot;gateway_alias&quot;:&quot;ethereum&quot;,&quot;min_amount&quot;:&quot;100.00000000&quot;,&quot;max_amount&quot;:&quot;10000000.00000000&quot;,&quot;percent_charge&quot;:&quot;0.00&quot;,&quot;fixed_charge&quot;:&quot;0.00000000&quot;,&quot;rate&quot;:&quot;1.00000000&quot;,&quot;image&quot;:null,&quot;gateway_parameter&quot;:null,&quot;created_at&quot;:&quot;2023-02-02T00:59:29.000000Z&quot;,&quot;updated_at&quot;:&quot;2024-04-22T16:00:19.000000Z&quot;,&quot;method&quot;:{&quot;id&quot;:51,&quot;form_id&quot;:20,&quot;code&quot;:&quot;1002&quot;,&quot;name&quot;:&quot;Ethereum&quot;,&quot;alias&quot;:&quot;ethereum&quot;,&quot;status&quot;:true,&quot;gateway_parameters&quot;:&quot;[]&quot;,&quot;supported_currencies&quot;:[],&quot;crypto&quot;:0,&quot;extra&quot;:null,&quot;description&quot;:&quot;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Montserrat, sans-serif;\&quot;&gt;Kindly make payment to the wallet address&amp;nbsp;&lt;\/span&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Montserrat, sans-serif; text-align: var(--bs-body-text-align);\&quot;&gt;below:&lt;\/span&gt;&lt;\/font&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/span&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;b&gt;&lt;font size=\&quot;5\&quot;&gt;0x62375772190C4EdCd246AB38B307583d1177031F&lt;\/font&gt;&lt;\/b&gt;&lt;br&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;b&gt;&lt;font size=\&quot;5\&quot;&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/b&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;Provide us with proof of payment using&amp;nbsp;&lt;\/span&gt;&lt;\/font&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Poppins, sans-serif;\&quot;&gt;the form&amp;nbsp;&lt;\/span&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;below:&lt;\/span&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;br&gt;NOTE:&amp;nbsp;Kindly check or confirm that you are making payment to the correct wallet address listed.&lt;\/font&gt;&lt;\/div&gt;&quot;,&quot;created_at&quot;:&quot;2023-02-02T00:59:29.000000Z&quot;,&quot;updated_at&quot;:&quot;2024-04-22T16:00:14.000000Z&quot;}}">Ethereum</option>
+                                                                    <option value="10" data-gateway="{&quot;id&quot;:10,&quot;name&quot;:&quot;Litecoin&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;symbol&quot;:&quot;&quot;,&quot;method_code&quot;:1005,&quot;gateway_alias&quot;:&quot;litecoin&quot;,&quot;min_amount&quot;:&quot;100.00000000&quot;,&quot;max_amount&quot;:&quot;1000000.00000000&quot;,&quot;percent_charge&quot;:&quot;0.00&quot;,&quot;fixed_charge&quot;:&quot;0.00000000&quot;,&quot;rate&quot;:&quot;1.00000000&quot;,&quot;image&quot;:null,&quot;gateway_parameter&quot;:null,&quot;created_at&quot;:&quot;2023-11-21T12:38:35.000000Z&quot;,&quot;updated_at&quot;:&quot;2024-04-22T15:58:53.000000Z&quot;,&quot;method&quot;:{&quot;id&quot;:54,&quot;form_id&quot;:23,&quot;code&quot;:&quot;1005&quot;,&quot;name&quot;:&quot;Litecoin&quot;,&quot;alias&quot;:&quot;litecoin&quot;,&quot;status&quot;:true,&quot;gateway_parameters&quot;:&quot;[]&quot;,&quot;supported_currencies&quot;:[],&quot;crypto&quot;:0,&quot;extra&quot;:null,&quot;description&quot;:&quot;&lt;font size=\&quot;3\&quot;&gt;Kindly make payment to the wallet address below:&lt;\/font&gt;&lt;div&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/div&gt;&lt;div&gt;&lt;b&gt;&lt;font size=\&quot;5\&quot;&gt;ltc1qj2jrcdp8qu2rpaf0rwtec4arxew9csea9kw4kr&lt;\/font&gt;&lt;\/b&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/div&gt;&lt;div&gt;&lt;br&gt;&lt;\/div&gt;&lt;div&gt;Provide us with proof of payment using&amp;nbsp;&lt;span style=\&quot;color: rgb(33, 37, 41); font-size: 1rem; text-align: var(--bs-body-text-align);\&quot;&gt;the form&lt;\/span&gt;&lt;span style=\&quot;color: var(--bs-body-color); font-size: 1rem; text-align: var(--bs-body-text-align);\&quot;&gt;&amp;nbsp;below:&lt;\/span&gt;&lt;\/div&gt;&lt;div&gt;&lt;br&gt;&lt;\/div&gt;&lt;div&gt;&lt;b&gt;NOTE&lt;\/b&gt;: Kindly check or confirm that you are making payment to the correct wallet address listed.&lt;\/div&gt;&quot;,&quot;created_at&quot;:&quot;2023-11-21T12:38:35.000000Z&quot;,&quot;updated_at&quot;:&quot;2024-04-22T15:58:53.000000Z&quot;}}">Litecoin</option>
+                                                                    <option value="4" data-gateway="{&quot;id&quot;:4,&quot;name&quot;:&quot;Tether USDT (ERC20)&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;symbol&quot;:&quot;&quot;,&quot;method_code&quot;:1003,&quot;gateway_alias&quot;:&quot;tether_usdt_(erc20)&quot;,&quot;min_amount&quot;:&quot;100.00000000&quot;,&quot;max_amount&quot;:&quot;10000000.00000000&quot;,&quot;percent_charge&quot;:&quot;0.00&quot;,&quot;fixed_charge&quot;:&quot;0.00000000&quot;,&quot;rate&quot;:&quot;1.00000000&quot;,&quot;image&quot;:null,&quot;gateway_parameter&quot;:null,&quot;created_at&quot;:&quot;2023-02-02T01:00:21.000000Z&quot;,&quot;updated_at&quot;:&quot;2024-04-22T15:59:33.000000Z&quot;,&quot;method&quot;:{&quot;id&quot;:52,&quot;form_id&quot;:21,&quot;code&quot;:&quot;1003&quot;,&quot;name&quot;:&quot;Tether USDT (ERC20)&quot;,&quot;alias&quot;:&quot;tether_usdt_(erc20)&quot;,&quot;status&quot;:true,&quot;gateway_parameters&quot;:&quot;[]&quot;,&quot;supported_currencies&quot;:[],&quot;crypto&quot;:0,&quot;extra&quot;:null,&quot;description&quot;:&quot;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Montserrat, sans-serif;\&quot;&gt;Kindly make payment to the wallet address&amp;nbsp;&lt;\/span&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Montserrat, sans-serif; text-align: var(--bs-body-text-align);\&quot;&gt;below:&lt;\/span&gt;&lt;\/font&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/span&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;b&gt;&lt;font size=\&quot;5\&quot;&gt;0x62375772190C4EdCd246AB38B307583d1177031F&lt;\/font&gt;&lt;\/b&gt;&lt;font size=\&quot;4\&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;\/b&gt;&lt;\/font&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;br&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;Provide us with proof of payment using&amp;nbsp;&lt;\/span&gt;&lt;\/font&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Poppins, sans-serif;\&quot;&gt;the form&lt;\/span&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;&amp;nbsp;below:&lt;\/span&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;br&gt;NOTE:&amp;nbsp;Kindly check or confirm that you are making payment to the correct wallet address listed.&lt;\/font&gt;&lt;\/div&gt;&quot;,&quot;created_at&quot;:&quot;2023-02-02T01:00:21.000000Z&quot;,&quot;updated_at&quot;:&quot;2024-04-22T15:59:33.000000Z&quot;}}">Tether USDT (ERC20)</option>
+                                                                    <option value="2" data-gateway="{&quot;id&quot;:2,&quot;name&quot;:&quot;Tether USDT (TRC20)&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;symbol&quot;:&quot;&quot;,&quot;method_code&quot;:1001,&quot;gateway_alias&quot;:&quot;tether_usdt_(trc20)&quot;,&quot;min_amount&quot;:&quot;100.00000000&quot;,&quot;max_amount&quot;:&quot;10000000.00000000&quot;,&quot;percent_charge&quot;:&quot;0.00&quot;,&quot;fixed_charge&quot;:&quot;0.00000000&quot;,&quot;rate&quot;:&quot;1.00000000&quot;,&quot;image&quot;:null,&quot;gateway_parameter&quot;:null,&quot;created_at&quot;:&quot;2023-02-02T00:58:40.000000Z&quot;,&quot;updated_at&quot;:&quot;2024-04-22T16:00:47.000000Z&quot;,&quot;method&quot;:{&quot;id&quot;:50,&quot;form_id&quot;:19,&quot;code&quot;:&quot;1001&quot;,&quot;name&quot;:&quot;Tether USDT (TRC20)&quot;,&quot;alias&quot;:&quot;tether_usdt_(trc20)&quot;,&quot;status&quot;:true,&quot;gateway_parameters&quot;:&quot;[]&quot;,&quot;supported_currencies&quot;:[],&quot;crypto&quot;:0,&quot;extra&quot;:null,&quot;description&quot;:&quot;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Montserrat, sans-serif;\&quot;&gt;Kindly make payment to the wallet address&amp;nbsp;&lt;\/span&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Montserrat, sans-serif; text-align: var(--bs-body-text-align);\&quot;&gt;below:&lt;\/span&gt;&lt;\/font&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/span&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;b&gt;&lt;font size=\&quot;5\&quot;&gt;TLh6ti9NGPc6WcHoRCmXVvDNJ7aNwFP5up&lt;\/font&gt;&lt;\/b&gt;&lt;font size=\&quot;4\&quot;&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;br&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;Provide us with proof of payment using&amp;nbsp;&lt;\/span&gt;&lt;\/font&gt;&lt;span style=\&quot;color: rgb(33, 37, 41); font-family: Poppins, sans-serif;\&quot;&gt;the form&amp;nbsp;&lt;\/span&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;span style=\&quot;color: rgb(33, 37, 41);\&quot;&gt;below:&lt;\/span&gt;&lt;br&gt;&lt;\/font&gt;&lt;\/div&gt;&lt;div style=\&quot;font-family: Montserrat, sans-serif;\&quot;&gt;&lt;font size=\&quot;3\&quot;&gt;&lt;br&gt;NOTE:&amp;nbsp;Kindly check or confirm that you are making payment to the correct wallet address listed.&lt;\/font&gt;&lt;\/div&gt;&quot;,&quot;created_at&quot;:&quot;2023-02-02T00:58:40.000000Z&quot;,&quot;updated_at&quot;:&quot;2024-04-22T16:00:47.000000Z&quot;}}">Tether USDT (TRC20)</option>
+                                                                
+                            </select>
+                            <code class="gateway-info rate-info d-none">Rate: 1 USD = <span class="gateway-rate"></span> <span class="method_currency"></span></code>
+                        </div>
+                        <div class="form-group">
+                           
+
+                            <label class="required" for="cryptoname">Select Crypto</label>
+                            <select onchange="drate()" class="form-control form--control form-select" id="cryptoname" name="cryptoname" required="">
+                                <option value="">Select One</option>
+                                    <option value="BTC">BTC</option>
+                                    <option value="ETH">ETH</option>
+                                    <option value="SOL">SOL</option>
+                                    <option value="DOGE">DOGE</option>
+                                    <option value="BNB">BNB</option>
+                                    <option value="USDC">USDC</option>
+                                    <option value="SHIB">SHIB</option>
+                                    <option value="XRP">XRP</option>
+                                    <option value="USDT">USDT</option>
+                                    <option value="LTC">LTC</option>
+                                    <option value="TRX">TRON</option>
+                                    
+                                
+                                
+                                
+                            </select>
+                            <code class="gateway-info rate-info d-none">Rate: 1 USD = <span class="gateway-rate"></span> <span class="method_currency"></span></code>
+                        </div>
+                        <div class="form-group">
+                            <label class="required" for="amount">Investment Amount</label>
+                            <div class="input-group">
+                                <input type="number" step="any" onkeyup="drate()" class="form-control form--control" id="amount" name="amount" required="">
+                                <div class="input-group-text">USD</div>
+                            </div>
+                            
+                            <code class="gateway-info d-none">Charge: <span class="charge"></span> USD. Total amount: <span class="total"></span> USD</code>
+                        </div>
+                        
+                         <div class="form-group">
+                            <label class="required" for="quantity">Amount of Crypto / Stocks</label>
+                            <div class="input-group">
+                                <input type="number" step="any" class="form-control form--control" id="quantity" name="quantity" readonly="" required="">
+                                
+                            </div>
+                            
+                            <code class="gateway-info d-none">Charge: <span class="charge"></span> USD. Total amount: <span class="total"></span> USD</code>
+                        </div>
+                    </div>
+                                <div class="modal-footer">
+                                            <button type="button" class="btn btn--dark" data-bs-dismiss="modal">No</button>
+                        <button type="submit" class="btn btn--base">Yes</button>
+                                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+function drate(){
+    
+
+var cryptoname = document.getElementById("cryptoname");
+ var cryptovalue = cryptoname.options[cryptoname.selectedIndex].value;
+    // var cryptoname = document.getElementBy('cryptoname')[0].value;
+    
+    var rate;
+    var amount = document.getElementById('amount').value;
+    var quantity = document.getElementById('quantity');
+    switch(cryptovalue) {
+  case 'BTC':
+      rate = 1.618E-5;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+  case 'ETH':
+       rate = 0.0003446;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+  case 'BNB':
+       rate = 0.001728;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+      case 'SOL':
+           rate = 0.006832;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+     
+      case 'SHIB':
+           rate = 41852.71;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+      case 'USDC':
+           rate = 0.9999;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+      case 'TRX':
+           rate = 7.995;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+      case '':
+    // code block
+    break;
+      case 'XRP':
+           rate = 1.98;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+      case 'LTC':
+           rate = 0.01251;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+      case 'SOL':
+           rate = 0.006832;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+      case 'DOGE':
+           rate = 6.562;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+      case 'USDC':
+           rate = 0.9999;
+      var final = amount * rate;
+      quantity.value= final;
+    // code block
+    break;
+   
+    
+  default:
+    rate = 1;
+      var final = amount * rate;
+      quantity.value= final;
+}
+}
+</script>
+
+    
+    <link rel="stylesheet" href="./bot_files/iziToast.min.css">
+<script src="./bot_files/iziToast.min.js.download"></script>
+
+<script>
+    "use strict";
+    function notify(status,message) {
+        iziToast[status]({
+            message: message,
+            position: "topRight"
+        });
+    }
+</script>
+
+    <script>
+        $(".langSel").on("change", function() {
+            window.location.href = "https://app.astonoptions.com/change/" + $(this).val();
+        });
+
+        Array.from(document.querySelectorAll('table')).forEach(table => {
+            let heading = table.querySelectorAll('thead tr th');
+            Array.from(table.querySelectorAll('tbody tr')).forEach((row) => {
+                Array.from(row.querySelectorAll('td')).forEach((colum, i) => {
+                    colum.setAttribute('data-label', heading[i].innerText)
+                });
+            });
+        });
+
+        $.each($('input, select, textarea'), function(i, element) {
+            var elementType = $(element);
+            if (elementType.attr('type') != 'checkbox') {
+                if (element.hasAttribute('required')) {
+                    $(element).closest('.form-group').find('label').addClass('required');
+                }
+            }
+        });
+
+        var inputElements = $('[type=text],[type=password],[type=email],[type=number],select,textarea');
+        $.each(inputElements, function(index, element) {
+            element = $(element);
+            element.closest('.form-group').find('label').attr('for', element.attr('name'));
+            element.attr('id', element.attr('name'))
+        });
+
+        $('.policy').on('click', function() {
+            $.get('https://app.astonoptions.com/cookie/accept', function(response) {
+                $('.cookies-card').addClass('d-none');
+            });
+        });
+
+
+        setTimeout(function() {
+            $('.cookies-card').removeClass('hide')
+        }, 2000);
+    </script>
+
+
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><iframe id="chat-application-iframe" title="Smartsupp" aria-hidden="true" style="display: block; position: fixed; top: 0px; left: 0px; width: 1px; height: 1px; opacity: 0; border: none; z-index: -1; pointer-events: none;" src="./bot_files/saved_resource.html"></iframe><div id="smartsupp-widget-container">  <div style="border-radius: 9999px; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 2px 32px; height: 56px; position: fixed; bottom: 24px; left: initial; right: 12px; z-index: 10000000; width: 56px;" data-testid="widgetButtonFrame"><iframe id="widgetButtonFrame" title="Smartsupp widget button" style="position: absolute; width: 100%; height: 100%; border: none; display: block; text-align: left; margin: 0px; padding: 0px; top: 0px; left: 0px; opacity: 1;" allowfullscreen="" scrolling="no" src="./bot_files/saved_resource(1).html"></iframe></div>  </div><script src="https://cdn.gtranslate.net/widgets/latest/float.js" async></script>
+
+    
+
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript><!-- Smartsupp Live Chat script -->
+<!-- Smartsupp Live Chat script -->
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'b9c1bb0111fe5d307ac533ab5116e16c4d57beaf';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

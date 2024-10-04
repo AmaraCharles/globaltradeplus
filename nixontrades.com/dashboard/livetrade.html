@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://app.astonoptions.com/user/invest/tradinglive -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GlobalTradePlus - Trading Board</title>
+    <meta name="title" content="Aston Options - Trading Board">
+
+    <meta name="description" content="Trade with Confidence on the Most Innovative Crypto Trading Platform - Unlock the Full Potential of the Crypto Market with Us">
+    <meta name="keywords" content="Stocks,Crypto,Wealth,Financial goals,Cryptocurrencies,Market trends,Financial analysts,Diversification,Investment portfolio,Real-time trading,Educational resources,Market updates,Personalized investment coaching,Portfolio management,Seamless investment process,Secure financial future,financial market,stock market,cryptocurrency market,investment strategy,risk management,diversification strategy,financial advisor,investment company,online trading,financial planning,asset management,stock trading,crypto trading,investment opportunities,market analysis,professional guidance,personalized service,investment portfolio management,financial success,long-term investment,secure investments">
+    <link rel="shortcut icon" href="https://app.astonoptions.com/assets/images/logoIcon/favicon.png" type="image/x-icon">
+
+    
+    <link rel="apple-touch-icon" href="https://app.astonoptions.com/assets/images/logoIcon/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Aston Options - Trading Board">
+    
+    <meta itemprop="name" content="Aston Options - Trading Board">
+    <meta itemprop="description" content="Trade with Confidence on the Most Innovative Crypto Trading Platform - Unlock the Full Potential of the Crypto Market with Us">
+    <meta itemprop="image" content="https://app.astonoptions.com/assets/images/seo/655812645be331700270692.png">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HPS Partner">
+    <meta property="og:description" content="Trade with Confidence on the Most Innovative Crypto Trading Platform - Unlock the Full Potential of the Crypto Market with Us">
+    <meta property="og:image" content="https://app.astonoptions.com/assets/images/seo/655812645be331700270692.png">
+    <meta property="og:image:type" content="png">
+    <meta property="og:image:width" content="1180">
+    <meta property="og:image:height" content="600">
+    <meta property="og:url" content="https://app.astonoptions.com/user/invest/tradinglive">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- font  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./livetrade_files/css2" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link href="./livetrade_files/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./livetrade_files/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./livetrade_files/line-awesome.min.css">
+
+    <link rel="stylesheet" href="./livetrade_files/animate.css">
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="./livetrade_files/slick.css">
+    <link rel="stylesheet" href="./livetrade_files/magnific-popup.css">
+    <link rel="stylesheet" href="./livetrade_files/apexcharts.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="./livetrade_files/main.css">
+
+        <link rel="stylesheet" href="./livetrade_files/datepicker.min.css">
+
+    <link rel="stylesheet" href="./livetrade_files/custom.css">
+
+    <link rel="stylesheet" href="./livetrade_files/color.php">
+
+    <style>
+    .custom-progress {
+        max-width: 40px !important;
+        max-height: 40px;
+        transform: rotate(-90deg);
+    }
+
+    .custom-progress .bg-circle {
+        stroke: #00000011;
+        fill: none;
+        stroke-width: 4px;
+        position: relative;
+        z-index: -1;
+    }
+
+    .custom-progress .progress-circle {
+        fill: none;
+        stroke: hsl(var(--base));
+        stroke-width: 4px;
+        z-index: 11;
+        position: absolute;
+    }
+
+    .expired-time-circle {
+        position: relative;
+        border: none !important;
+        height: 38px;
+        width: 38px;
+        margin-right: 7px;
+    }
+
+    .expired-time-circle::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 4px solid #dbdce1;
+    }
+
+    .expired-time-circle.danger-border .animation-circle {
+        border-color: hsl(var(--base)) !important;
+    }
+
+    .animation-circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 4px solid hsl(var(--base));
+        height: 100%;
+        width: 100%;
+        border-radius: 150px;
+        transform: rotateY(180deg);
+        animation-name: clipCircle;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0, 0, 1, 1);
+        z-index: 1;
+    }
+
+    .account-wrapper .left .top {
+        margin-top: 0;
+    }
+
+    .account-wrapper .left,
+    .account-wrapper .right {
+        width: 100%;
+    }
+
+    .account-wrapper .right {
+        padding-left: 0;
+        margin-top: 35px;
+    }
+
+    @keyframes clipCircle {
+        0% {
+            clip-path: polygon(50% 50%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+            /* center, top-center*/
+        }
+
+        12.5% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+            /* center, top-center, top-left*/
+        }
+
+        25% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%);
+            /* center, top-center, top-left, left-center*/
+        }
+
+        37.5% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%);
+            /* center, top-center, top-left, left-center, bottom-left*/
+        }
+
+        50% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%);
+            /* center, top-center, top-left, left-center, bottom-left, bottom-center*/
+        }
+
+        62.5% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+            /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right*/
+        }
+
+        75% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 50%, 100% 50%, 100% 50%);
+            /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right, right-center*/
+        }
+
+        87.5% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0%, 100% 0%);
+            /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right, right-center top-right*/
+        }
+
+        100% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0%, 50% 0%);
+            /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right, right-center top-right, top-center*/
+        }
+    }
+
+    .capital-back {
+        font-size: 10px;
+    }
+</style>
+    <style>
+        .pb-120 {
+            padding-bottom: clamp(40px, 4vw, 40px);
+        }
+
+        .pt-120 {
+            padding-top: clamp(40px, 4vw, 40px);
+        }
+
+        .container {
+            max-width: 1140px;
+        }
+    </style>
+
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+<script>
+    $(document).ready(async function () {
+  var obtainfromls=localStorage.getItem("user")
+  var parseResult=JSON.parse(obtainfromls)
+  console.log(parseResult);
+  $("#accountbalance").html(parseResult.balance)
+  $("#profit").html(parseResult.profit)
+    })
+</script>
+
+
+<body data-new-gr-c-s-check-loaded="14.1172.0" data-gr-ext-installed="">
+    
+
+  <div class="d-flex flex-wrap">
+
+        <div class="dashboard-sidebar" id="dashboard-sidebar">
+            <button class="btn-close dash-sidebar-close d-xl-none"></button>
+            <a href="https://GlobalTradePlus.com" class="logo"><img src="./Aston Options - Dashboard_files/logo_2.png"
+                    alt="images"></a>
+            <div class="bg--lights">
+                <div class="profile-info">
+                    <p class="fs--13px mb-3 fw-bold">ACCOUNT BALANCE</p>
+                    <h4 class="usd-balance text--base mb-2 fs--30"><span id="accountbalance"></span> <sub
+                            class="top-0 fs--13px">USD </sub></h4>
+                    <p class="btc-balance fw-medium fs--18px"><span id="profit">0.00</span> <sub
+                            class="top-0 fs--13px">USD <small>(Profit Wallet)</small></sub></p>
+                    <!--<p class="btc-balance fw-medium fs--18px">0.00 <sub class="top-0 fs--13px">USD <small>(Staking Wallet)</small></sub></p>-->
+                    <div class="mt-4 d-flex flex-wrap gap-2">
+                        <a href="deposit.html" class="btn btn--base btn--smd">Deposit</a>
+                        <a href="withcheckout.html"
+                            class="btn btn--secondary btn--smd">Withdraw</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html" class=""><img
+                            src="./Aston Options - Dashboard_files/dashboard.png" alt="icon"> Dashboard</a></li>
+                <!--<li><a href="https://app.astonoptions.com/user/invest/statistics" class=""><img src="https://app.astonoptions.com/assets/templates/invester//images/icon/investment.png" alt="icon"> Investments</a></li>-->
+                <!--<li><a href="https://app.astonoptions.com/user/invest/cryptostatistics" class=""><img src="https://app.astonoptions.com/assets/templates/invester//images/icon/2fa.png" alt="icon">Staking</a></li>-->
+                <!-- <li><a href="https://app.astonoptions.com/user/invest/botstatistics" class=""><img
+                            src="./Aston Options - Dashboard_files/2fa.png" alt="icon">Bot</a></li> -->
+                
+                <li><a href="livetrade.html" class="active"><img
+                            src="./Aston Options - Dashboard_files/2fa.png" alt="icon">Live Trade</a></li>
+                <li><a href="deposit.html" class=""><img
+                            src="./Aston Options - Dashboard_files/wallet.png" alt="icon"> Deposit</a></li>
+                <li><a href="withcheckout.html" class=""><img
+                            src="./Aston Options - Dashboard_files/withdraw.png" alt="icon"> Withdraw</a></li>
+                <!--<li><a href="https://app.astonoptions.com/user/transfer-balance" class=""><img src="https://app.astonoptions.com/assets/templates/invester//images/icon/balance-transfer.png" alt="icon"> Transfer Balance</a></li>-->
+                                <li><a href="referrals.html" class=""><img
+                            src="./Aston Options - Dashboard_files/referral.png" alt="icon"> Referrals</a></li>
+
+                <!-- <li><a href="https://app.astonoptions.com/ticket" class=""><img
+                            src="./Aston Options - Dashboard_files/ticket.png" alt="icon"> Support Ticket</a></li> -->
+                <li><a href="../login.html" class=""><img
+                            src="./Aston Options - Dashboard_files/2fa.png" alt="icon">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="dashboard-wrapper">
+
+            <div class="dashboard-nav d-flex flex-wrap align-items-center justify-content-between">
+                <div class="nav-left d-flex gap-4 align-items-center">
+                    <div class="dash-sidebar-toggler d-xl-none" id="dash-sidebar-toggler">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="nav-right d-flex flex-wrap align-items-center gap-3">
+                    <select name="langSel" class="langSel form--control h-auto px-2 py-1 border-0">
+                        <option value="en" selected="">English</option>
+                    </select>
+                    <ul class="nav-header-link d-flex flex-wrap gap-2">
+                        <li>
+                            <a class="link" href="settings.html" id="initials"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            <div class="dropdown-wrapper">
+                                <div class="dropdown-header">
+                                    <h6 class="name text--base">false pegasus</h6>
+                                    <p class="fs--14px">falsepegasus</p>
+                                </div>
+                                <ul class="links">
+                                    <li><a href="settings.html"><i
+                                                class="fas fa-user"></i> Profile</a></li>
+                                    <li><a href="changepassword.html"><i
+                                                class="fas fa-key"></i> Change Password</a></li>
+                                    <!-- <li><a href="https://app.astonoptions.com/user/twofactor"><i class="fas fa-key"></i>
+                                            2fa</a></li> -->
+                                    <li><a href="../login.html"><i
+                                                class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        <div class="dashboard-container">
+
+            
+
+<style>
+    .tradingview-widget-container {
+        position: relative;
+        height: 500px;
+        /* Adjust the height value as desired */
+    }
+
+    .tradingview-widget-container iframe {
+        height: 100% !important;
+        width: 100% !important;
+    }
+       .center-alert {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Set height to 100% of the viewport height */
+    }
+</style>
+  <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+          .blur {
+      filter: blur(1px);
+    }
+
+        #fullscreen-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: fill;
+        }
+    </style>
+<!-- <style>
+ .video-container {
+      position: relative;
+    }
+
+    /* Style for the overlay text */
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Style for the video */
+    video {
+      width: 100%;
+      height: auto;
+    }
+</style> -->
+<!-- <div class="container">
+   <video id="player" src="video1.mp4" autoplay loop muted></video>
+
+</div>
+
+ <div class="video-container">
+    <video id="fullscreen-video" class="blur" autoplay="" loop="" muted="">
+    <source src="video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+   
+  
+<div class="container overlay-text text-white text-very-small alert alert-warning" style="background-color: #FE5B25; padding-left: 10px; box-shadow: black;">
+    <div class="row">
+        <div class="col">
+            Hello!! <span id="firstName"></span>, You are not yet eligible to join the livestream of ongoing trade. Kindly select any of the available plans.
+        </div>
+    </div>-->
+    
+    <style>
+        #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgba(17, 17, 17, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+    </style>
+    <video autoplay muted loop id="myVideo">
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+      
+      <!-- Optional: some overlay text to describe the video -->
+      <div class="content container overlay-text text-white text-very-small alert alert-warning" >
+        <div class="row" style="display: flex;align-items:center;justify-content: center;font-size:25px;  background-color: #FE5B25; padding-left: 10px; box-shadow: black;height: 300px;">
+            <div class="col">
+                Hello!! <span id="firstName"></span>, You are not yet eligible to join the livestream of ongoing trade. Kindly select any of the available plans.
+            </div>
+        </div>
+  
+</div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+    
+    // Get the button
+    var btn = document.getElementById("myBtn");
+    
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+     
+    <script src="./livetrade_files/jquery-3.6.0.min.js.download"></script>
+    <script src="./livetrade_files/bootstrap.bundle.min.js.download"></script>
+
+    <!-- Pluglin Link -->
+    <script src="./livetrade_files/slick.min.js.download"></script>
+    <script src="./livetrade_files/magnific-popup.min.js.download"></script>
+    <script src="./livetrade_files/apexcharts.min.js.download"></script>
+
+      <script src="./livetrade_files/datepicker.min.js.download"></script>
+  <script src="./livetrade_files/datepicker.en.js.download"></script>
+  <script>
+    var video = document.getElementById('fullscreen-video');
+
+    // Function to make the video fullscreen
+    function makeFullScreen() {
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) {
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) {
+            video.msRequestFullscreen();
+        }
+    }
+
+    // Event listener for the fullscreen button
+    video.addEventListener('loadeddata', makeFullScreen);
+</script>
+
+    <!-- Main js -->
+    <script src="./livetrade_files/main.js.download"></script>
+
+    <script src="./livetrade_files/chart.min.js.download"></script>
+
+
+
+<script>
+    let animationCircle = $('.animation-circle');
+    animationCircle.css('animation-duration', function () {
+        let duration = ($(this).data('duration'));
+        return duration;
+    });
+</script>
+
+<script>
+    // Get the select element
+    var selectElement = document.getElementById("crypto-select");
+
+    // Add event listener for click event
+    selectElement.addEventListener("change", function () {
+        // Get the selected option value
+        var selectedOption = selectElement.options[selectElement.selectedIndex].value;
+
+        // Open the selected option as a link
+        if (selectedOption) {
+            window.open(selectedOption);
+        }
+    });
+</script>
+
+
+
+
+    
+    <link rel="stylesheet" href="./livetrade_files/iziToast.min.css">
+<script src="./livetrade_files/iziToast.min.js.download"></script>
+
+<script>
+    "use strict";
+    function notify(status,message) {
+        iziToast[status]({
+            message: message,
+            position: "topRight"
+        });
+    }
+</script>
+
+    <script>
+        $(".langSel").on("change", function() {
+            window.location.href = "https://app.astonoptions.com/change/" + $(this).val();
+        });
+
+        Array.from(document.querySelectorAll('table')).forEach(table => {
+            let heading = table.querySelectorAll('thead tr th');
+            Array.from(table.querySelectorAll('tbody tr')).forEach((row) => {
+                Array.from(row.querySelectorAll('td')).forEach((colum, i) => {
+                    colum.setAttribute('data-label', heading[i].innerText)
+                });
+            });
+        });
+
+        $.each($('input, select, textarea'), function(i, element) {
+            var elementType = $(element);
+            if (elementType.attr('type') != 'checkbox') {
+                if (element.hasAttribute('required')) {
+                    $(element).closest('.form-group').find('label').addClass('required');
+                }
+            }
+        });
+
+        var inputElements = $('[type=text],[type=password],[type=email],[type=number],select,textarea');
+        $.each(inputElements, function(index, element) {
+            element = $(element);
+            element.closest('.form-group').find('label').attr('for', element.attr('name'));
+            element.attr('id', element.attr('name'))
+        });
+
+        $('.policy').on('click', function() {
+            $.get('https://app.astonoptions.com/cookie/accept', function(response) {
+                $('.cookies-card').addClass('d-none');
+            });
+        });
+
+
+        setTimeout(function() {
+            $('.cookies-card').removeClass('hide')
+        }, 2000);
+    </script>
+
+<script>
+
+    var currentUser = {};
+  
+    async function fetchUserInfo() {
+      var parsedData = localStorage.getItem('user')
+      var userFromLS = JSON.parse((parsedData))
+  
+      console.log(userFromLS);
+  
+      const response = await $.ajax({
+        type: "GET",
+        url: `https://dekmar-render-zd92.onrender.com/users/${userFromLS.email}`,
+        dataType: "json",
+        timeout: 30000,
+        success: async function (data) {
+          Object.assign(currentUser, data.data)
+          await localStorage.setItem("user", JSON.stringify(data.data))
+        },
+        error: function () {
+          alert(error)
+        }
+      });
+  
+      return response.data;
+    }
+  
+    $(document).ready(async function () {
+      const userInfo = await fetchUserInfo();
+  
+      $('#firstName').val(userInfo.firstName)
+      $('#lastname').val(userInfo.lastName)
+ $('#initials').val( userInfo.firstName.charAt(0) + userInfo.lastName.charAt(0))
+  
+      $('#email').val(userInfo.email)
+      $('#title').html(userInfo.firstName + " " + userInfo.lastName)
+      $('#initials').val( userInfo.firstName.charAt(0) + userInfo.lastName.charAt(0))
+  
+      $('#bitcoinInputField').val(userInfo.accounts.btc.address)
+      $('#litecoinInputField').val(userInfo.accounts.ltc.address)
+      $('#ethereumInputField').val(userInfo.accounts.eth.address)
+      $('#usdtInputField').val(userInfo.accounts.usdt.address)
+    });
+  
+   
+    
+  
+  
+  
+  </script>
+  
+  <script>
+
+    var currentUser = {};
+    
+    
+    $(document).ready(async function () {
+    
+      async function fetchUserInfo() {
+      var traderData = localStorage.getItem('trader')
+      var parsedData =JSON.parse(traderData)
+      var traderIdent=parsedData._id;
+    //   var traderData = localStorage.getItem('user')
+    //   var parsedData =JSON.parse(traderData)
+    //   var traderIdent=parsedData.trader;
+    
+    
+      const response = await $.ajax({
+        type: "GET",
+        url: `https://dekmar-trader.vercel.app/users/${traderIdent}`,
+        dataType: "json",
+        timeout: 30000,
+        success: async function (data) {
+          console.log("data", data);
+          Object.assign(currentUser, data.data)
+        },
+        error: function () {
+          alert(error)
+        }
+       
+      });
+    
+      return response.data;
+    }
+
+    $('.btn').click(function(){
+      var btn=$('.btn')
+      btn.text('...')
+    })
+
+    
+    
+      const userInfo = await fetchUserInfo();
+      const userInfoString=JSON.stringify(userInfo)
+    const user=localStorage.setItem("trader",userInfoString)
+
+    
+    $('#id').text(userInfo._id)
+    $('#drawdown').text(userInfo.drawdown)
+    // $('#profit').text(userInfo.profit)
+    $('#frequency').text(userInfo.frequency)
+    $('#risk').text(userInfo.risk)
+    $('#name').text(userInfo.name)
+    $('#strategy').text(userInfo.strategy)
+   
+   
+   
+   
+    
+    var tbl = $('.table-body');
+    var td=$('<td>');
+         userInfo.history.forEach(function (user) {
+         
+
+            $(`
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="${headerId}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${accordionId}">
+                        <div class="col-lg-4 col-sm-5 col-8 order-1 icon-wrapper">
+                            <div class="left">
+                                <div class="icon tr-icon icon-success">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="trans-title">Trade</h6>
+                                    <span class="text-muted font-size--14px mt-2" id="time">${user.date}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-12 order-sm-2 order-3 content-wrapper mt-sm-0 mt-3">
+                           
+                        </div>
+                        <div class="col-lg-4 col-sm-3 col-4 order-sm-3 order-2 text-end amount-wrapper">
+                            
+                        </div>
+                    </button>
+                </h2>
+                <div id="${accordionId}" class="accordion-collapse collapse" aria-labelledby="${headerId}" data-bs-parent="#transactionAccordion">
+                    <div class="accordion-body">
+                        <ul class="caption-list">
+                            <li>
+                                <span class="caption">Status</span>
+                                <span class="value">Completed</span>
+                            </li>
+                            <li>
+                                <span class="caption">Commission</span>
+                                <span class="value">15%</span>
+                            </li>
+                            
+                            
+                            
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        `).appendTo($(".table"));
+
+       
+
+            var row = $('<tr>').appendTo(tbl);
+            $('<td>').text(`${user.currency}`).appendTo(row);
+                $('<td>').text(`${user.profit}`).appendTo(row);
+                  
+                  $('<td>').text(`${user.date}`).appendTo(row);
+          
+           
+            tbl.appendTo($(".table"));
+    
+           
+          
+    
+          })
+    
+
+    
+     });
+    
+    
+    
+    
+      </script>
+
+    
+
+
+</div><svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><iframe id="chat-application-iframe" title="Smartsupp" aria-hidden="true" style="display: block; position: fixed; top: 0px; left: 0px; width: 1px; height: 1px; opacity: 0; border: none; z-index: -1; pointer-events: none;" src="./livetrade_files/saved_resource.html"></iframe><div id="smartsupp-widget-container">  <div style="border-radius: 9999px; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 2px 32px; height: 56px; position: fixed; bottom: 24px; left: initial; right: 12px; z-index: 10000000; width: 56px;" data-testid="widgetButtonFrame"><iframe id="widgetButtonFrame" title="Smartsupp widget button" style="position: absolute; width: 100%; height: 100%; border: none; display: block; text-align: left; margin: 0px; padding: 0px; top: 0px; left: 0px; opacity: 1;" allowfullscreen="" scrolling="no" src="./livetrade_files/saved_resource(1).html"></iframe></div>  </div><script src="https://cdn.gtranslate.net/widgets/latest/float.js" async></script>
+
+    
+
+<!-- Smartsupp Live Chat script -->
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'b9c1bb0111fe5d307ac533ab5116e16c4d57beaf';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

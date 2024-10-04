@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)./tradinghistory.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GlobalTradePlus - Trading Board</title>
+    <meta name="title" content="Aston Options - Trading Board">
+
+    <meta name="description" content="Trade with Confidence on the Most Innovative Crypto Trading Platform - Unlock the Full Potential of the Crypto Market with Us">
+    <meta name="keywords" content="Stocks,Crypto,Wealth,Financial goals,Cryptocurrencies,Market trends,Financial analysts,Diversification,Investment portfolio,Real-time trading,Educational resources,Market updates,Personalized investment coaching,Portfolio management,Seamless investment process,Secure financial future,financial market,stock market,cryptocurrency market,investment strategy,risk management,diversification strategy,financial advisor,investment company,online trading,financial planning,asset management,stock trading,crypto trading,investment opportunities,market analysis,professional guidance,personalized service,investment portfolio management,financial success,long-term investment,secure investments">
+    <link rel="shortcut icon" href="https://app.astonoptions.com/assets/images/logoIcon/favicon.png" type="image/x-icon">
+
+    
+    <link rel="apple-touch-icon" href="https://app.astonoptions.com/assets/images/logoIcon/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Aston Options - Trading Board">
+    
+    <meta itemprop="name" content="Aston Options - Trading Board">
+    <meta itemprop="description" content="Trade with Confidence on the Most Innovative Crypto Trading Platform - Unlock the Full Potential of the Crypto Market with Us">
+    <meta itemprop="image" content="https://app.astonoptions.com/assets/images/seo/655812645be331700270692.png">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HPS Partner">
+    <meta property="og:description" content="Trade with Confidence on the Most Innovative Crypto Trading Platform - Unlock the Full Potential of the Crypto Market with Us">
+    <meta property="og:image" content="https://app.astonoptions.com/assets/images/seo/655812645be331700270692.png">
+    <meta property="og:image:type" content="png">
+    <meta property="og:image:width" content="1180">
+    <meta property="og:image:height" content="600">
+    <meta property="og:url" content="./tradinghistory.html">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- font  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./tradinghistory_files/css2" rel="stylesheet">
+
+
+    <link href="./tradinghistory_files/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./tradinghistory_files/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./tradinghistory_files/line-awesome.min.css">
+
+    <link rel="stylesheet" href="./tradinghistory_files/animate.css">
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="./tradinghistory_files/slick.css">
+    <link rel="stylesheet" href="./tradinghistory_files/magnific-popup.css">
+    <link rel="stylesheet" href="./tradinghistory_files/apexcharts.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="./tradinghistory_files/main.css">
+
+        <link rel="stylesheet" href="./tradinghistory_files/datepicker.min.css">
+
+    <link rel="stylesheet" href="./tradinghistory_files/custom.css">
+
+    <link rel="stylesheet" href="./tradinghistory_files/color.php">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+    .custom-progress {
+        max-width: 40px !important;
+        max-height: 40px;
+        transform: rotate(-90deg);
+    }
+
+    .custom-progress .bg-circle {
+        stroke: #00000011;
+        fill: none;
+        stroke-width: 4px;
+        position: relative;
+        z-index: -1;
+    }
+
+    .custom-progress .progress-circle {
+        fill: none;
+        stroke: hsl(var(--base));
+        stroke-width: 4px;
+        z-index: 11;
+        position: absolute;
+    }
+
+    .expired-time-circle {
+        position: relative;
+        border: none !important;
+        height: 38px;
+        width: 38px;
+        margin-right: 7px;
+    }
+
+    .expired-time-circle::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 4px solid #dbdce1;
+    }
+
+    .expired-time-circle.danger-border .animation-circle {
+        border-color: hsl(var(--base)) !important;
+    }
+
+    .animation-circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 4px solid hsl(var(--base));
+        height: 100%;
+        width: 100%;
+        border-radius: 150px;
+        transform: rotateY(180deg);
+        animation-name: clipCircle;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0, 0, 1, 1);
+        z-index: 1;
+    }
+
+    .account-wrapper .left .top {
+        margin-top: 0;
+    }
+
+    .account-wrapper .left,
+    .account-wrapper .right {
+        width: 100%;
+    }
+
+    .account-wrapper .right {
+        padding-left: 0;
+        margin-top: 35px;
+    }
+
+    @keyframes clipCircle {
+        0% {
+            clip-path: polygon(50% 50%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+            /* center, top-center*/
+        }
+
+        12.5% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+            /* center, top-center, top-left*/
+        }
+
+        25% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%);
+            /* center, top-center, top-left, left-center*/
+        }
+
+        37.5% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%);
+            /* center, top-center, top-left, left-center, bottom-left*/
+        }
+
+        50% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%);
+            /* center, top-center, top-left, left-center, bottom-left, bottom-center*/
+        }
+
+        62.5% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+            /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right*/
+        }
+
+        75% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 50%, 100% 50%, 100% 50%);
+            /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right, right-center*/
+        }
+
+        87.5% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0%, 100% 0%);
+            /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right, right-center top-right*/
+        }
+
+        100% {
+            clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0%, 50% 0%);
+            /* center, top-center, top-left, left-center, bottom-left, bottom-center, bottom-right, right-center top-right, top-center*/
+        }
+    }
+
+    .capital-back {
+        font-size: 10px;
+    }
+</style>
+    <style>
+        .pb-120 {
+            padding-bottom: clamp(40px, 4vw, 40px);
+        }
+
+        .pt-120 {
+            padding-top: clamp(40px, 4vw, 40px);
+        }
+
+        .container {
+            max-width: 1140px;
+        }
+    </style>
+
+<script type="text/javascript" charset="utf-8" async="" src="./tradinghistory_files/loader.js.download"></script><script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '59ba79d2fc419942ea29a8fbc1af2f46d3be4b3a';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+<script>
+    $(document).ready(async function () {
+        
+  var obtainfromls=localStorage.getItem("user")
+  var parseResult=JSON.parse(obtainfromls)
+  console.log(parseResult);
+  $("#accountBalance").html(parseResult.balance)
+  $("#profit").html(parseResult.profit)
+    })
+</script>
+<style>
+    /* Dropdown Button */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+  
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+  
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+  
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+  
+    /* Style the dropdown button */
+    .dropdown .dropdown-toggle {
+      cursor: pointer;
+    }
+  </style>
+
+
+<body data-new-gr-c-s-check-loaded="14.1172.0" data-gr-ext-installed="">
+    
+
+<div class="d-flex flex-wrap">
+
+        <div class="dashboard-sidebar" id="dashboard-sidebar">
+            <button class="btn-close dash-sidebar-close d-xl-none"></button>
+            <a href="https://GlobalTradePlus.com" class="logo"><img src="./Aston Options - Dashboard_files/logo_2.png"
+                    alt="images"></a>
+            <div class="bg--lights">
+                <div class="profile-info">
+                    <p class="fs--13px mb-3 fw-bold">ACCOUNT BALANCE</p>
+                    <h4 class="usd-balance text--base mb-2 fs--30"><span id="accountBalance"></span> <sub
+                            class="top-0 fs--13px">USD </sub></h4>
+                    <p class="btc-balance fw-medium fs--18px"><span id="profit">0.00</span> <sub
+                            class="top-0 fs--13px">USD <small>(Profit Wallet)</small></sub></p>
+                    <!--<p class="btc-balance fw-medium fs--18px">0.00 <sub class="top-0 fs--13px">USD <small>(Staking Wallet)</small></sub></p>-->
+                    <div class="mt-4 d-flex flex-wrap gap-2">
+                        <a href="deposit.html" class="btn btn--base btn--smd">Deposit</a>
+                        <a href="withcheckout.html"
+                            class="btn btn--secondary btn--smd">Withdraw</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html" class=""><img
+                            src="./Aston Options - Dashboard_files/dashboard.png" alt="icon"> Dashboard</a></li>
+                <!--<li><a href="https://app.astonoptions.com/user/invest/statistics" class=""><img src="https://app.astonoptions.com/assets/templates/invester//images/icon/investment.png" alt="icon"> Investments</a></li>-->
+                <!--<li><a href="https://app.astonoptions.com/user/invest/cryptostatistics" class=""><img src="https://app.astonoptions.com/assets/templates/invester//images/icon/2fa.png" alt="icon">Staking</a></li>-->
+                <!-- <li><a href="https://app.astonoptions.com/user/invest/botstatistics" class=""><img
+                            src="./Aston Options - Dashboard_files/2fa.png" alt="icon">Bot</a></li> -->
+                
+                <li><a href="livetrade.html" class=""><img
+                            src="./Aston Options - Dashboard_files/2fa.png" alt="icon">Live Trade</a></li>
+                                <li><a href="copytrading.html" class=""><i class=" fa fa-eye pe-2"></i>  Copy an Expert</a></li>
+                                                          <li class="nav-item dropdown">
+                                                            <a class="dropdown-toggle" id="transactionsDropdown" role="button">
+                                                              <img src="./transactions_files/transaction.png" alt="icon"> Transactions
+                                                            </a>
+                                                            
+                                                            <!-- Dropdown Content -->
+                                                            <div class="dropdown-content" aria-labelledby="transactionsDropdown">
+                                                              <a href="deposithistory.html">Deposits</a>
+                                                              <a href="withdrawalhistory.html">Withdrawals</a>
+                                                              <a href="tradinghistory.html">Copy trades</a> 
+                                                            </div>
+                                                          </li>
+                <li><a href="deposit.html" class=""><img
+                            src="./Aston Options - Dashboard_files/wallet.png" alt="icon"> Deposit</a></li>
+                <li><a href="withcheckout.html" class=""><img
+                            src="./Aston Options - Dashboard_files/withdraw.png" alt="icon"> Withdraw</a></li>
+                <!--<li><a href="https://app.astonoptions.com/user/transfer-balance" class=""><img src="https://app.astonoptions.com/assets/templates/invester//images/icon/balance-transfer.png" alt="icon"> Transfer Balance</a></li>-->
+                                <li><a href="referrals.html" class=""><img
+                            src="./Aston Options - Dashboard_files/referral.png" alt="icon"> Referrals</a></li>
+
+                <!-- <li><a href="https://app.astonoptions.com/ticket" class=""><img
+                            src="./Aston Options - Dashboard_files/ticket.png" alt="icon"> Support Ticket</a></li> -->
+                <li><a href="../login.html" class=""><img
+                            src="./Aston Options - Dashboard_files/2fa.png" alt="icon">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="dashboard-wrapper">
+
+            <div class="dashboard-nav d-flex flex-wrap align-items-center justify-content-between">
+                <div class="nav-left d-flex gap-4 align-items-center">
+                    <div class="dash-sidebar-toggler d-xl-none" id="dash-sidebar-toggler">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="nav-right d-flex flex-wrap align-items-center gap-3">
+                    <select name="langSel" class="langSel form--control h-auto px-2 py-1 border-0">
+                        <option value="en" selected="">English</option>
+                    </select>
+                    <ul class="nav-header-link d-flex flex-wrap gap-2">
+                        <li>
+                             <a class="link" href="settings.html" id="initials"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            <div class="dropdown-wrapper">
+                                <div class="dropdown-header">
+                                    <h6 class="name text--base">false pegasus</h6>
+                                    <p class="fs--14px">falsepegasus</p>
+                                </div>
+                                <ul class="links">
+                                    <li><a href="settings.html"><i
+                                                class="fas fa-user"></i> Profile</a></li>
+                                    <li><a href="changepassword.html"><i
+                                                class="fas fa-key"></i> Change Password</a></li>
+                                    <!-- <li><a href="https://app.astonoptions.com/user/twofactor"><i class="fas fa-key"></i>
+                                            2fa</a></li> -->
+                                    <li><a href="../login.html"><i
+                                                class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        <div class="dashboard-container">
+
+            
+
+<style>
+    .tradingview-widget-container {
+        position: relative;
+        height: 500px;
+        /* Adjust the height value as desired */
+    }
+
+    .tradingview-widget-container iframe {
+        height: 100% !important;
+        width: 100% !important;
+    }
+</style>
+<style>
+#overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+</style>
+<div class="dashboard-inner">
+    <div class="mb-4">
+        <!--<p>Trade</p>-->
+        <h3>Trade</h3>
+    </div>
+    
+    
+
+
+ 
+ 
+
+    
+    
+    <div class="row gy-4 mb-5">
+        <div class="col-md-12 h-100">
+            <div class="card h-100">
+                <div class="card-body h-100">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container" style="height:500px">
+
+                        <script type="text/javascript" src="./tradinghistory_files/tv.js.download"></script>
+                        <script type="text/javascript">
+                            new TradingView.widget(
+                                {
+                                    "autosize": true,
+                                    "symbol": "BTCUSD",
+                                    "interval": "D",
+                                    "timezone": "Etc/UTC",
+                                    "theme": "light",
+                                    "style": "1",
+                                    "locale": "en",
+                                    "toolbar_bg": "#f1f3f6",
+                                    "enable_publishing": false,
+                                    "allow_symbol_change": true,
+                                    "container_id": "tradingview_44912"
+                                }
+                            );
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+
+<div class="row">
+       <div class="mb-15 mt-15">
+        <!--<p>Trade</p>-->
+        <h3> All Trades</h3>
+         <ul class="nav nav-pills mb-3 mt-4" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Trades</button>
+  </li>
+  <!-- <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Closed Trades</button>
+  </li> -->
+
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">        <div class="col-lg-12">
+             <div class="card b-radius--10 ">
+            <div class="card-body p-0">
+                <div class="table-responsive--sm table-responsive">
+                    <table class="table table--light style--two">
+                        <thead>
+                            <tr>
+                                <th>Coin Pair</th>
+                            
+                                <th>Amount Traded</th>
+                                <th>Trade Type</th>
+                                <th>Date Entered</th>
+                                <th>PnL</th>
+                                <th>Trader</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                                            
+                            
+                            </tbody>
+                        </table><!-- table end -->
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="col-lg-12">
+             <div class="card b-radius--10 ">
+            <div class="card-body p-0">
+                <div class="table-responsive--sm table-responsive">
+                    <table class="table table--light style--two">
+                        <thead>
+                            <tr>
+                                <th>Coin Pair</th>    
+                                <th>Amount Traded</th>
+                                <th>Trade Type</th>
+                                <th>Date Entered</th>
+                                <th>PnL</th>
+                                <th>Trader</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table-body">
+                                                            
+                            
+                            </tbody>
+                        </table><!-- table end -->
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+  </div>
+  <!-- <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+</div>
+    </div>
+       -->
+
+
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</div><style>.tradingview-widget-copyright {font-size: 13px !important; line-height: 32px !important; text-align: center !important; vertical-align: middle !important; font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important; color: #B2B5BE !important;} .tradingview-widget-copyright .blue-text {color: #2962FF !important;} .tradingview-widget-copyright a {text-decoration: none !important; color: #B2B5BE !important;} .tradingview-widget-copyright a:visited {color: #B2B5BE !important;} .tradingview-widget-copyright a:hover .blue-text {color: #1E53E5 !important;} .tradingview-widget-copyright a:active .blue-text {color: #1848CC !important;} .tradingview-widget-copyright a:visited .blue-text {color: #2962FF !important;}</style>
+
+        
+    <script src="./tradinghistory_files/jquery-3.6.0.min.js.download"></script>
+    <script src="./tradinghistory_files/bootstrap.bundle.min.js.download"></script>
+
+    <!-- Pluglin Link -->
+    <script src="./tradinghistory_files/slick.min.js.download"></script>
+    <script src="./tradinghistory_files/magnific-popup.min.js.download"></script>
+    <script src="./tradinghistory_files/apexcharts.min.js.download"></script>
+
+      <script src="./tradinghistory_files/datepicker.min.js.download"></script>
+  <script src="./tradinghistory_files/datepicker.en.js.download"></script>
+
+    <!-- Main js -->
+    <script src="./tradinghistory_files/main.js.download"></script>
+
+    <script src="./tradinghistory_files/chart.min.js.download"></script>
+
+
+
+<script>
+    let animationCircle = $('.animation-circle');
+    animationCircle.css('animation-duration', function () {
+        let duration = ($(this).data('duration'));
+        return duration;
+    });
+</script>
+
+
+
+  <script>
+    (function($){
+        "use strict";
+        if(!$('.datepicker-here').val()){
+            $('.datepicker-here').datepicker();
+        }
+    })(jQuery)
+  </script>
+  
+  <script>
+
+    var currentUser = {};
+    
+    
+    $(document).ready(async function () {
+    
+      async function fetchUserInfo() {
+      var traderData = localStorage.getItem('trader')
+      var parsedData =JSON.parse(traderData)
+      var traderIdent=parsedData._id;
+    //   var traderData = localStorage.getItem('user')
+    //   var parsedData =JSON.parse(traderData)
+    //   var traderIdent=parsedData.trader;
+    
+    
+      const response = await $.ajax({
+        type: "GET",
+        url: `https://dekmar-trader.vercel.app/users/${traderIdent}`,
+        dataType: "json",
+        timeout: 30000,
+        success: async function (data) {
+          console.log("data", data);
+          Object.assign(currentUser, data.data)
+        },
+        error: function () {
+          alert(error)
+        }
+       
+      });
+    
+      return response.data;
+    }
+
+    $('.btn').click(function(){
+      var btn=$('.btn')
+      btn.text('...')
+    })
+
+    
+    
+      const userInfo = await fetchUserInfo();
+      const userInfoString=JSON.stringify(userInfo)
+    const user=localStorage.setItem("trader",userInfoString)
+
+    
+    $('#id').text(userInfo._id)
+    $('#drawdown').text(userInfo.drawdown)
+    // $('#profit').text(userInfo.profit)
+    $('#frequency').text(userInfo.frequency)
+    $('#risk').text(userInfo.risk)
+    $('#name').text(userInfo.name)
+    $('#strategy').text(userInfo.strategy)
+   
+   
+   
+   
+    
+    var tbl = $('.table-body');
+    var td=$('<td>');
+         userInfo.history.forEach(function (user) {
+         
+
+       
+
+            var row = $('<tr>').appendTo(tbl);
+            $('<td>').text(`${user.currency}`).appendTo(row);
+                $('<td>').text(`$${user.amount}`).appendTo(row);
+            
+                  $('<td>').text(`${user.type}`).appendTo(row);
+                    $('<td>').text(`${user.date}`).appendTo(row);
+                        $('<td>').text(`$${user.profit}`).appendTo(row);
+                            $('<td>').text(`${userInfo.name}`).appendTo(row);
+                                $('<td>').text(`${user.status}`).appendTo(row);
+                  
+           
+                  
+           
+                  
+           
+            tbl.appendTo($(".table"));
+    
+           
+          
+    
+          })
+    
+
+    
+     });
+    
+    
+    
+    
+      </script>
+
+    
+
+   <script>
+        // const countrySelect = document.getElementById('countrySelect');
+        // const stateSelect = document.getElementById('stateSelect');
+
+        // Define a JavaScript object with country-state mappings
+        const marketData = {
+    Indices:  [
+  "DJIUSD",      // Dow Jones Industrial Average
+  "SPXUSD",      // S&P 500
+  "IXICUSD",     // NASDAQ Composite
+  "FTSEUSD",     // FTSE 100
+  "DAXUSD",      // DAX 30
+  "NI225USD",    // Nikkei 225
+  "HSIUSD",      // Hang Seng Index
+  "ASXUSD",      // ASX 200
+  "CACUSD",      // CAC 40
+  "SSECUSD",     // Shanghai Composite
+  "NIFTYUSD",    // NIFTY 50
+  "SensexUSD",   // BSE Sensex
+  "AORDUSD",     // Australia All Ordinaries
+  "IBEXUSD",     // IBEX 35
+  "MXAPUSD",     // MSCI Asia Pacific
+  "SX5EUSD",     // Euro Stoxx 50
+  "XAUUSD",      // Gold Spot
+  "XAGUSD",      // Silver Spot
+  "USOUSD",      // WTI Crude Oil
+  "BRENTUSD",    // Brent Crude Oil
+  "NGUSD",       // Natural Gas
+  "USDOLLAR",    // US Dollar Index
+  "VIXUSD",      // CBOE Volatility Index (VIX)
+  "XRPUSDTP",    // Ripple Stock Tokenized
+  "BTCUSDTP",    // Bitcoin Stock Tokenized
+  "AAPLUSD",     // Apple Inc.
+  "GOOGLUSD",    // Alphabet Inc. (Google)
+  "AMZNUSD",     // Amazon.com Inc.
+  "MSFTUSD"      // Microsoft Corporation
+],
+
+    Cryptocurrencies:[
+  "BTCUSD",
+  "ETHUSD",
+  "BNBUSD",
+  "ADAUSD",
+  "XRPUSD",
+  "SOLUSD",
+  "DOTUSD",
+  "DOGEUSD",
+  "LINKUSD",
+  "LTCUSD",
+  "BCHUSD",
+  "XLMUSD",
+  "USDCUSD",
+  "UNIUSD",
+  "LUNAUSD",
+  "VETUSD",
+  "THETAUSD",
+  "FILUSD",
+  "TRXUSD",
+  "XMRUSD",
+  "CAKEUSD",
+  "AAVEUSD",
+  "ATOMUSD",
+  "EOSUSD",
+  "XTZUSD",
+  "ALGOUSD",
+  "MKRUSD",
+  "DASHUSD",
+  "COMPUSD",
+  "ASAPUSD"
+],
+
+    Stocks:  [
+  "AAPLUSD",     // Apple Inc.
+  "GOOGLUSD",    // Alphabet Inc. (Google)
+  "AMZNUSD",     // Amazon.com Inc.
+  "MSFTUSD",     // Microsoft Corporation
+  "TSLAUSD",     // Tesla Inc.
+  "FBUSD",       // Meta Platforms, Inc. (Facebook)
+  "NVDAUSD",     // NVIDIA Corporation
+  "NFLXUSD",     // Netflix Inc.
+  "BABAUSD",     // Alibaba Group Holding Limited
+  "VUSD",        // Visa Inc.
+  "PYPLUSD",     // PayPal Holdings, Inc.
+  "JPMUSD",      // JPMorgan Chase & Co.
+  "GSUSD",       // The Goldman Sachs Group, Inc.
+  "IBMUSD",      // International Business Machines Corporation
+  "CUSD",        // Citigroup Inc.
+  "INTCUSD",     // Intel Corporation
+  "DISUSD",      // The Walt Disney Company
+  "UBERUSD",     // Uber Technologies, Inc.
+  "LYFTUSD",     // Lyft, Inc.
+  "SBUXUSD",     // Starbucks Corporation
+  "KOUSD",       // The Coca-Cola Company
+  "PEPUSD",      // PepsiCo, Inc.
+  "WMTUSD",      // Walmart Inc.
+  "TUSD",        // AT&T Inc.
+  "BAUSD",       // The Boeing Company
+  "GSUSD",       // General Electric Company
+  "CVXUSD",      // Chevron Corporation
+  "XOMUSD",      // Exxon Mobil Corporation
+  "CATUSD",      // Caterpillar Inc.
+  "HDUSD"        // The Home Depot, Inc.
+],
+
+    
+    
+    ForexPairs: [
+        'EUR/USD',
+        'USD/JPY',
+        'GBP/USD',
+        'AUD/USD',
+        'USD/CAD',
+        'EUR/JPY',
+        'GBP/JPY',
+        'AUD/JPY',
+        'EUR/GBP',
+        'USD/CHF',
+        'NZD/USD',
+        'USD/SGD',
+        'USD/HKD',
+        'USD/SEK',
+        'USD/NOK',
+        'USD/TRY',
+        'USD/ZAR',
+        'USD/INR',
+        'USD/BRL',
+        'USD/MXN',
+        'USD/SGD',
+        'USD/HKD',
+        'USD/SEK',
+        'USD/NOK',
+        'USD/TRY',
+        'USD/ZAR',
+        'USD/INR',
+        'USD/BRL',
+        'USD/MXN',
+    ],
+};
+
+
+
+
+        // Function to update the state options based on the selected country
+       
+
+        // Add an event listener to the countrySelect element to trigger state updates
+        
+    </script>
+  
+    
+    <link rel="stylesheet" href="./tradinghistory_files/iziToast.min.css">
+<script src="./tradinghistory_files/iziToast.min.js.download"></script>
+
+<script>
+    "use strict";
+    function notify(status,message) {
+        iziToast[status]({
+            message: message,
+            position: "topRight"
+        });
+    }
+</script>
+
+    <script>
+        $(".langSel").on("change", function() {
+            window.location.href = "https://app.astonoptions.com/change/" + $(this).val();
+        });
+
+        Array.from(document.querySelectorAll('table')).forEach(table => {
+            let heading = table.querySelectorAll('thead tr th');
+            Array.from(table.querySelectorAll('tbody tr')).forEach((row) => {
+                Array.from(row.querySelectorAll('td')).forEach((colum, i) => {
+                    colum.setAttribute('data-label', heading[i].innerText)
+                });
+            });
+        });
+
+        $.each($('input, select, textarea'), function(i, element) {
+            var elementType = $(element);
+            if (elementType.attr('type') != 'checkbox') {
+                if (element.hasAttribute('required')) {
+                    $(element).closest('.form-group').find('label').addClass('required');
+                }
+            }
+        });
+
+        var inputElements = $('[type=text],[type=password],[type=email],[type=number],select,textarea');
+        $.each(inputElements, function(index, element) {
+            element = $(element);
+            element.closest('.form-group').find('label').attr('for', element.attr('name'));
+            element.attr('id', element.attr('name'))
+        });
+
+        $('.policy').on('click', function() {
+            $.get('https://app.astonoptions.com/cookie/accept', function(response) {
+                $('.cookies-card').addClass('d-none');
+            });
+        });
+
+
+        setTimeout(function() {
+            $('.cookies-card').removeClass('hide')
+        }, 2000);
+    </script>
+
+
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><iframe id="chat-application-iframe" title="Smartsupp" aria-hidden="true" style="display: block; position: fixed; top: 0px; left: 0px; width: 1px; height: 1px; opacity: 0; border: none; z-index: -1; pointer-events: none;" src="./tradinghistory_files/saved_resource(1).html"></iframe><div id="smartsupp-widget-container">  <div style="border-radius: 9999px; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 2px 32px; height: 56px; position: fixed; bottom: 24px; left: initial; right: 12px; z-index: 10000000; width: 56px;" data-testid="widgetButtonFrame"><iframe id="widgetButtonFrame" title="Smartsupp widget button" style="position: absolute; width: 100%; height: 100%; border: none; display: block; text-align: left; margin: 0px; padding: 0px; top: 0px; left: 0px; opacity: 1;" allowfullscreen="" scrolling="no" src="./tradinghistory_files/saved_resource(2).html"></iframe></div>  </div><script src="https://cdn.gtranslate.net/widgets/latest/float.js" async></script>
+
+    
+
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript><!-- Smartsupp Live Chat script -->
+<!-- Smartsupp Live Chat script -->
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'b9c1bb0111fe5d307ac533ab5116e16c4d57beaf';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
