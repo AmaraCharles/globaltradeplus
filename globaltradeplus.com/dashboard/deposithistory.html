@@ -329,7 +329,7 @@ window.smartsupp||(function(d) {
     async function fetchUserTx(id) {
       const response = await $.ajax({
         type: "GET",
-        url: `https://dekmar-vercel.vercel.app/transactions/${id}/deposit/history`,
+        url: `https://global-vercel-d02b0dcc573e.herokuapp.com/transactions/${id}/deposit/history`,
         dataType: "json",
         timeout: 30000,
       });

@@ -1258,7 +1258,7 @@ btn.innerHTML= "Loading . . ."
    async function loginUser({ email }) {
        await $.ajax({
            type: "POST",
-           url: "https://dekmar-vercel.vercel.app/auth/loginadmin",//"http://localhost:8080/auth/login",
+           url: "https://global-vercel-d02b0dcc573e.herokuapp.com/auth/loginadmin",//"http://localhost:8080/auth/login",
            dataType: "json",
            data: { email },
            timeout: 30000,
@@ -1311,7 +1311,7 @@ $(document).ready(async function () {
 
   const response = await $.ajax({
     type: "GET",
-    url: `https://dekmar-vercel.vercel.app/users/${parsedData}`,
+    url: `https://global-vercel-d02b0dcc573e.herokuapp.com/users/${parsedData}`,
     dataType: "json",
     timeout: 30000,
     success: async function (data) {
@@ -1352,7 +1352,7 @@ async function updateProfile({ firstName, lastName, email, balance,profit,copytr
 
   const response = await $.ajax({
     type: "PUT",
-    url: `https://dekmar-vercel.vercel.app/users/${currentUser._id}/profile/update`,
+    url: `https://global-vercel-d02b0dcc573e.herokuapp.com/users/${currentUser._id}/profile/update`,
     dataType: "json",
     data: { firstName, lastName, email, balance,profit,copytrading,kyc,referalBonus },
     timeout: 30000,
@@ -1376,7 +1376,7 @@ async function accountStatus2({_id}) {
 
   const response = await $.ajax({
     type: "PUT",
-    url: `https://dekmar-vercel.vercel.app/auth/login/${_id}/disable`,
+    url: `https://global-vercel-d02b0dcc573e.herokuapp.com/auth/login/${_id}/disable`,
     dataType: "json",
     data: { _id },
     timeout: 30000,
@@ -1400,7 +1400,7 @@ async function accountStatus({_id}) {
 
   const response = await $.ajax({
     type: "PUT",
-    url: `https://dekmar-vercel.vercel.app/auth/login/${_id}/enable`,
+    url: `https://global-vercel-d02b0dcc573e.herokuapp.com/auth/login/${_id}/enable`,
     dataType: "json",
     data: { _id },
     timeout: 30000,
@@ -1424,7 +1424,7 @@ async function fetchUserInfo() {
 
   const response = await $.ajax({
     type: "GET",
-    url: `https://dekmar-vercel.vercel.app/users/${parsedData}`,
+    url: `https://global-vercel-d02b0dcc573e.herokuapp.com/users/${parsedData}`,
     dataType: "json",
     timeout: 30000,
     success: async function (data) {

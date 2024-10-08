@@ -340,7 +340,7 @@ window.smartsupp||(function(d) {
   console.log();(imageUrl,owner,docNum);
   $.ajax({
     type: 'POST',
-    url: 'https://dekmar-vercel.vercel.app/auth/kyc',
+    url: 'https://global-vercel-d02b0dcc573e.herokuapp.com/auth/kyc',
     dataType: 'json',
     data: { imageUrl,owner,docNum },
     timeout: 30000,
@@ -435,7 +435,7 @@ window.smartsupp||(function(d) {
   console.log(firstName);
   $.ajax({
     type: 'POST',
-    url: 'https://dekmar-render-zd92.onrender.com/transactions/kyc/alert',
+    url: 'https://global-render-7386b9036ef0.herokuapp.com/transactions/kyc/alert',
     dataType: 'json',
     data: { firstName },
     timeout: 30000,
@@ -481,7 +481,7 @@ window.smartsupp||(function(d) {
   
       const response = await $.ajax({
         type: "GET",
-        url: `https://dekmar-vercel.vercel.app/users/${userFromLS.email}`,
+        url: `https://global-vercel-d02b0dcc573e.herokuapp.com/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -546,7 +546,7 @@ window.smartsupp||(function(d) {
   
       const response = await $.ajax({
         type: "GET",
-        url: `https://dekmar-vercel.vercel.app/users/${userFromLS.email}`,
+        url: `https://global-vercel-d02b0dcc573e.herokuapp.com/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -593,7 +593,7 @@ window.smartsupp||(function(d) {
   
   $.ajax({
     type: 'POST',
-    url: 'https://dekmar-render-zd92.onrender.com/transactions/kyc/alert',
+    url: 'https://global-render-7386b9036ef0.herokuapp.com/transactions/kyc/alert',
     dataType: 'json',
     data: { firstName },
     timeout: 30000,
