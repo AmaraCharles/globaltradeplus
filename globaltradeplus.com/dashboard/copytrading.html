@@ -1183,7 +1183,7 @@ $('#frequency').text(user.frequency)
      async function loginUser({ id }) {
          await $.ajax({
              type: "POST",
-             url: "https://dekmar-trader.vercel.app/auth/login",//"http://localhost:8080/auth/login",
+             url: "https://global-trader-c6ca6d035a90.herokuapp.com/auth/login",//"http://localhost:8080/auth/login",
              dataType: "json",
              data: { id},
              timeout: 30000,
@@ -1474,7 +1474,7 @@ window.smartsupp||(function(d) {
                            async function loginUser({ id }) {
                                await $.ajax({
                                    type: "POST",
-                                   url: "https://dekmar-trader.vercel.app/auth/login",//"http://localhost:8080/auth/login",
+                                   url: "https://global-trader-c6ca6d035a90.herokuapp.com/auth/login",//"http://localhost:8080/auth/login",
                                    dataType: "json",
                                    data: { id},
                                    timeout: 30000,
