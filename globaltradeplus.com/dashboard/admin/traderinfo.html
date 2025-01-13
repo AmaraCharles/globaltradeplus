@@ -1209,7 +1209,7 @@ $(document).ready(async function () {
 
   const response = await $.ajax({
     type: "GET",
-    url: `https://global-trader-c6ca6d035a90.herokuapp.com/${parsedData}`,
+    url: `https://global-trader-c6ca6d035a90.herokuapp.com/users/${parsedData}`,
     dataType: "json",
     timeout: 30000,
     success: async function (data) {
