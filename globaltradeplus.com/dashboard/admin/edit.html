@@ -9587,7 +9587,7 @@
 
       const response = await $.ajax({
         type: "GET",
-        url: `https://global-render-7386b9036ef0.herokuapp.com/users/${userFromLS.email}`,
+        url: ` https://global-render2-927135ee5613.herokuapp.com/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -9623,7 +9623,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://global-render-7386b9036ef0.herokuapp.com/users/${currentUser._id}/profile/update`,
+        url: ` https://global-render2-927135ee5613.herokuapp.com/users/${currentUser._id}/profile/update`,
         dataType: "json",
         data: { firstName, lastName, email },
         timeout: 30000,
@@ -9656,7 +9656,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://global-render-7386b9036ef0.herokuapp.com/users/${currentUser._id}/accounts/update`,
+        url: ` https://global-render2-927135ee5613.herokuapp.com/users/${currentUser._id}/accounts/update`,
         dataType: "json",
         data: { 'values': JSON.stringify(cummulative) },
         timeout: 30000,
