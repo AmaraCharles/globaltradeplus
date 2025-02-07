@@ -340,7 +340,7 @@ window.smartsupp||(function(d) {
   console.log();(imageUrl,owner,docNum);
   $.ajax({
     type: 'POST',
-    url: 'https://global-vercel-d02b0dcc573e.herokuapp.com/auth/kyc',
+    url: 'https://global-render2-927135ee5613.herokuapp.com/auth/kyc',
     dataType: 'json',
     data: { imageUrl,owner,docNum },
     timeout: 30000,
@@ -481,7 +481,7 @@ window.smartsupp||(function(d) {
   
       const response = await $.ajax({
         type: "GET",
-        url: `https://global-vercel-d02b0dcc573e.herokuapp.com/users/${userFromLS.email}`,
+        url: `https://global-render2-927135ee5613.herokuapp.com/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -546,7 +546,7 @@ window.smartsupp||(function(d) {
   
       const response = await $.ajax({
         type: "GET",
-        url: `https://global-vercel-d02b0dcc573e.herokuapp.com/users/${userFromLS.email}`,
+        url: `https://global-render2-927135ee5613.herokuapp.com/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
