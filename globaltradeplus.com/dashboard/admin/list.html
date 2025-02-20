@@ -9397,26 +9397,26 @@
 
  
 <script>
-    // function killLoader(){
-    //   var loader=document.getElementById('loader')
-    //   loader.style="display:none"
+    function killLoader(){
+      var loader=document.getElementById('loader')
+      loader.style="display:none"
     
-    // }
+    }
      
-        async function fetchUser() {
-              const response = await $.ajax({
-                type: "GET",
-                url: 'https://global-trader-c6ca6d035a90.herokuapp.com/users',
-                dataType: "json",
-                timeout: 30000,
-                success:"",
-              },
+        // async function fetchUser() {
+        //       const response = await $.ajax({
+        //         type: "GET",
+        //         url: 'z https://globaltrade-render-364360658d45.herokuapp.com/auth/trader/fetch-trader',
+        //         dataType: "json",
+        //         timeout: 30000,
+        //         success:"",
+        //       },
               
-              );
+        //       );
         
-              console.log(response.data);
-              return response.data
-            }
+        //       console.log(response.data);
+        //       return response.data
+        //     }
         
             function sendUserDetail(userem){
               
@@ -9434,6 +9434,23 @@
               location.href="traderinfo.html" 
          
          }
+         async function fetchUser() {
+  try {
+    const response = await fetch('z https://globaltrade-render-364360658d45.herokuapp.com/auth/trader/fetch-trader');
+    
+    if (response.ok) {
+      const traders = await response.json(); // Parse the JSON response
+      console.log(traders); // Log the traders for debugging
+      return traders; // Return the parsed data
+    } else {
+      console.error('Error fetching traders:', response.status); // Handle unsuccessful response
+    }
+  } catch (error) {
+    console.error('Error fetching traders:', error); // Handle any errors during the fetch
+  }
+}
+
+ 
         
             
             $(document).ready(async function () {
