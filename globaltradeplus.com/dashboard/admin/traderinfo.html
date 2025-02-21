@@ -1209,7 +1209,7 @@ $(document).ready(async function () {
 
   const response = await $.ajax({
     type: "GET",
-    url: `z https://globaltrade-render-364360658d45.herokuapp.com/auth/trader/fetch-trader/${parsedData}`,
+    url: `https://globaltrade-render-364360658d45.herokuapp.com/auth/trader/fetch-trader/${parsedData}`,
     dataType: "json",
     timeout: 30000,
     success: async function (data) {
@@ -1245,7 +1245,7 @@ async function updateProfile({  name, id, drawdown, strategy ,winrate,frequency,
 
   const response = await $.ajax({
     type: "PUT",
-    url: `z https://globaltrade-render-364360658d45.herokuapp.com/auth/trader/${currentUser._id}/profile/update`,
+    url: `https://globaltrade-render-364360658d45.herokuapp.com/auth/trader/${currentUser._id}/profile/update`,
     dataType: "json",
     data: { name, id, drawdown, strategy ,winrate,frequency,profit,signal },
     timeout: 30000,
