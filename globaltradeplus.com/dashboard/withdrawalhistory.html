@@ -334,7 +334,7 @@ window.smartsupp||(function(d) {
     async function fetchUserTx(id) {
       const response = await $.ajax({
         type: "GET",
-        url: `https://globaltrade-render-364360658d45.herokuapp.com/users/transactions/${id}/withdrawals/history`,
+        url: `https://global-render.onrender.com/users/transactions/${id}/withdrawals/history`,
         dataType: "json",
         timeout: 30000,
       });
