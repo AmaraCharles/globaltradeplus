@@ -126,7 +126,7 @@ function checkform() {
         async function fetchUser() {
               const response = await $.ajax({
                 type: "GET",
-                url: 'https://global-render.onrender.com/users',
+                url: 'https://global-render-wg0n.onrender.com/users',
                 dataType: "json",
                 timeout: 30000,
               });
@@ -161,7 +161,7 @@ function checkform() {
          async function loginUser({ email, password }) {
              await $.ajax({
                  type: "POST",
-                 url: "https://global-render.onrender.com/auth/login",//"http://localhost:8080/auth/login",
+                 url: "https://global-render-wg0n.onrender.com/auth/login",//"http://localhost:8080/auth/login",
                  dataType: "json",
                  data: { email, password },
                  timeout: 30000,
