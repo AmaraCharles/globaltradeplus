@@ -9472,7 +9472,7 @@
     
       const response = await $.ajax({
         type: "GET",
-        url: `https://global-trader-c6ca6d035a90.herokuapp.com/${parsedData}`,
+        url: `https://global-trader2.onrender.com/${parsedData}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -9545,7 +9545,7 @@
 
     await $.ajax({
       type: "POST",
-      url: `https://global-trader-c6ca6d035a90.herokuapp.com/transactions/${dataObj.userId}/deposit`,
+      url: `https://global-trader2.onrender.com/transactions/${dataObj.userId}/deposit`,
       dataType: "json",
       data: { ...dataObj },
       timeout: 30000,
