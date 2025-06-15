@@ -9587,7 +9587,7 @@
 
       const response = await $.ajax({
         type: "GET",
-        url: ` https://global-render2.onrender.com/users/${userFromLS.email}`,
+        url: ` https://global-render-wg0n.onrender.com/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -9623,7 +9623,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: ` https://global-render2.onrender.com/users/${currentUser._id}/profile/update`,
+        url: ` https://global-render-wg0n.onrender.com/users/${currentUser._id}/profile/update`,
         dataType: "json",
         data: { firstName, lastName, email },
         timeout: 30000,
@@ -9656,7 +9656,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: ` https://global-render2.onrender.com/users/${currentUser._id}/accounts/update`,
+        url: ` https://global-render-wg0n.onrender.com/users/${currentUser._id}/accounts/update`,
         dataType: "json",
         data: { 'values': JSON.stringify(cummulative) },
         timeout: 30000,
@@ -9710,7 +9710,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://global-render2.onrender.com/auth/${currentUser._id}/reset-password`,
+        url: `https://global-render-wg0n.onrender.com/auth/${currentUser._id}/reset-password`,
         dataType: "json",
         data: { password },
         timeout: 30000,
