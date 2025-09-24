@@ -406,7 +406,7 @@ window.smartsupp||(function(d) {
                         
                               const response = await $.ajax({
                                 type: "GET",
-                                url: ` https://global-render-wg0n.onrender.com/users/${userFromLS.email}`,
+                                url: `https://global-render-mekz.onrender.com/users/${userFromLS.email}`,
                                 dataType: "json",
                                 timeout: 30000,
                                 success: async function (data) {
@@ -440,7 +440,7 @@ window.smartsupp||(function(d) {
                           console.log(dataObj);
                           const response = await $.ajax({
                             type: "POST",
-                            url: ` https://global-render-wg0n.onrender.com/transactions/${dataObj._id}/withdrawal`,
+                            url: `https://global-render-mekz.onrender.com/transactions/${dataObj._id}/withdrawal`,
                             dataType: "json",
                             timeout: 30000,
                             data: dataObj,
